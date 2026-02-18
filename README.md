@@ -8,3 +8,15 @@
 | 6602041630012 | Kanokwan Chaichana | Mail |
 | 6602041610101 | Khongdech Mee-intha | Tong |
 | 6602041620114 | Puttipong Joywong | Mic |
+
+## Environment
+``` 
+cp env.simple .env
+```
+## Running a Service
+### Database
+```
+
+docker compose -f db.yaml up # monitoring
+docker compose -d db.yaml up #background
+```
