@@ -16,7 +16,6 @@ cp env.simple .env
 ## Running a Service
 ### Database
 ```
-
 docker compose -f db.yaml up # monitoring
 docker compose -f db.yaml up -d #background
 ```
@@ -27,14 +26,14 @@ docker compose -f admin.yaml up # monitoring
 docker compose -f admin.yaml up -d #background
 ```
 
-### App 
+### App
 ```
-docker compose -f app.yaml up #monitoring
+docker compose -f app.yaml up # monitoring
 docker compose -f app.yaml up -d #background
 ```
 
-## Running 3 services in one line (etg.Database, PG Admin, Strapi)
+### Run all service
 ```
-docker-compose up #monotoring
-docker-compose up -d #background daemon
+docker-compose up # monitoring
+docker-compose up -d #background
 ```
