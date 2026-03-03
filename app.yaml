@@ -3,7 +3,7 @@ services:
     image: prawee/strapi:latest
     container_name: 68-s1-app
     ports:
-      - ${APP_PORT}:5432
+      - ${APP_PORT}:54324
     environment:
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
       DATABASE_CLIENT: ${DATABASE_CLIENT}
@@ -11,3 +11,4 @@ services:
       DATABASE_HOST: ${DATABASE_HOST}
       DATABASE_PORT: ${DATABASE_PORT}
       DATABASE_USERNAME: ${DATABASE_USERNAME}
+    
