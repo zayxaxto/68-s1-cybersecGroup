@@ -1,0 +1,20 @@
+services:
+  caddy:
+    image: caddy:latest
+    container_name: 68-s1-web-proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./localhost+1.pem:/certs/localhost+1.pem
+      - ./localhost+1-key.pem:/certs/localhost+1-key.pem
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - s1_network
+
+volumes:
+  caddy_data:
+  caddy_config:
