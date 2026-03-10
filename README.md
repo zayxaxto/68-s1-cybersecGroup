@@ -38,3 +38,11 @@ docker compose -f app.yaml up -d #background
 docker-compose up # monitoring
 docker-compose up -d #background
 ```
+
+## Local HTTPS Setup
+```
+brew install mkcert
+mkcert -install
+mkcert localhost admin.localhost
+```
+URLs: https://localhost , https://admin.localhost
