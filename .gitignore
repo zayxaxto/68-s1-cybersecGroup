@@ -1,1 +1,7 @@
+# Environment variables
 .env
+
+# SSL/TLS Certificates (Private keys and generated certs)
+*.pem
+*.crt
+*.key

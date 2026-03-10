@@ -1,0 +1,9 @@
+localhost {
+    tls /certs/localhost+1.pem /certs/localhost+1-key.pem
+    reverse_proxy s1app:1337
+}
+
+admin.localhost {
+    tls /certs/localhost+1.pem /certs/localhost+1-key.pem
+    reverse_proxy s1admin:80
+}
