@@ -2,6 +2,7 @@ services:
   s1admin:
     image: dpage/pgadmin4
     container_name: 68-s1-admin
+    restart: always
     ports:
       - ${PGADMIN_PORT}:80
     environment:
