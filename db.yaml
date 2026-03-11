@@ -2,6 +2,7 @@ services:
   s1db:
     image: postgres:latest
     container_name: 68-s1-database
+    restart: always
     ports:
       - ${POSTGRES_PORT}:5432
     environment:
