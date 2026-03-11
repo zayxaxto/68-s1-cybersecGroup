@@ -13,3 +13,8 @@ services:
       DATABASE_USERNAME: ${DATABASE_USERNAME}
     networks:
       - s1_network
+    volumes:
+      - s1app_uploads:/opt/app/public/uploads
+
+volumes:
+  s1app_uploads:

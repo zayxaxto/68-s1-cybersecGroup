@@ -10,3 +10,8 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASS}
     networks:
       - s1_network
+    volumes:
+      - s1db_data:/var/lib/postgresql
+
+volumes:
+  s1db_data:
