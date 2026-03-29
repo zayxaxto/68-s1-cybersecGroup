@@ -4,7 +4,7 @@ services:
     container_name: 68_s1_cybersecGroup_webproxy
     restart: unless-stopped
     ports:
-      - "337:443"
+      - ${Caddy_Port}:443
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - ./localhost+1.pem:/certs/localhost+1.pem
