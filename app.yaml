@@ -1,7 +1,7 @@
 services:
   s1app:
     image: prawee/strapi:latest
-    container_name: 68-s1-app
+    container_name: 68_s1_cybersecGroup_app
     restart: always
     ports:
       - ${APP_PORT}:1337

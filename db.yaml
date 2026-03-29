@@ -1,7 +1,7 @@
 services:
   s1db:
     image: postgres:latest
-    container_name: 68-s1-database
+    container_name: 68_s1_cybersecGroup_db
     restart: always
     ports:
       - ${POSTGRES_PORT}:5432
